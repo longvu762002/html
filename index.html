@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headset</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui;
+        font-weight: 600;
+        list-style: none;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #111;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 600px;
+        width: 100%;
+        height: 100px;
+    }
+    nav .logo{
+        font-size: 2rem;
+        background: -webkit-linear-gradient(120deg,hsl(318,94%,61%),hsl(239,69%,51%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+    nav a:hover {
+        border-bottom: 2px solid hsl(239, 69%, 51%);
+        transition: 1s;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul li {
+        padding: 5px;
+        background: -webkit-linear-gradient(120deg,hsl(318,94%,61%),hsl(239,69%,51%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px 400px;
+    }
+
+    .content img{
+        width: 25rem;
+        transform: translateY(0px);
+        animation: float 6s ease-in-out infinite;    
+    }
+    .introduction{
+        background: -webkit-linear-gradient(120deg,hsl(318,94%,61%),hsl(239,69%,51%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 300px;
+        height: 400px;
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-top: 200px;
+    }
+
+    @keyframes float{
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-50px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            Devland
+        </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+    </nav>
+    <div class="content">
+        <div class="introduction">
+            <p>We are company that offers the best headphones on the market.</p>
+        </div>
+        <img src="./img/headset.jpg" alt="">
+    </div>
+</body>
+</html>
